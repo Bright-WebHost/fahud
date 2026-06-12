@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 const blogPosts = [
   { img: 'bg4.jpg', category: 'Construction', title: 'The Secret to a Stylish Bedroom Makeover on a Budget', size: 'col-lg-12 col-md-6' },
   { img: 'bg2.jpg', category: 'Furniture', title: 'Do You Know How Home Value is Affected', size: 'col-lg-6 col-md-6' },
@@ -55,7 +56,7 @@ export default function BlogSection() {
                 <div className="col-lg-6 col-md-12 m-b30">
                   <div className="blog-post blog-post-4-outer">
                     <div className="wt-post-media">
-                      <a href="/blog-single"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/latest/bg1.jpg`} alt="Image" /></a>
+                      <a href="/blog-single"><img src={`${assetPrefix}/images/blog/latest/bg1.jpg`} alt="Image" /></a>
                       <div className="post-date"><span>14</span> April 2025</div>
                     </div>
                     <div className="wt-post-info">
@@ -65,7 +66,7 @@ export default function BlogSection() {
                       </div>
                       <div className="wt-post-meta">
                         <ul>
-                          <li className="post-author"><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/blog/blog-author/pic3.jpg`} alt="Image" /><span>Devid</span></li>
+                          <li className="post-author"><img src={`${assetPrefix}/images/blog/blog-author/pic3.jpg`} alt="Image" /><span>Devid</span></li>
                           <li className="post-comment"><i className="bi bi-chat-left"></i> 24</li>
                           <li className="post-time"><i className="bi bi-clock"></i> 14 Days</li>
                         </ul>

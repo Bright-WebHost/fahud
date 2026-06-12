@@ -1,9 +1,10 @@
 'use client';
+import { assetPrefix } from "@/lib/assetPrefix";
 
 import { motion, useScroll, useTransform } from 'framer-motion';
 import { useRef, useState } from 'react';
 
-const BASE_PATH = process.env.NODE_ENV === 'production' ? '/Fahud' : '';
+const BASE_PATH = assetPrefix;
 
 // ============================================================================
 // SERVICE DATA

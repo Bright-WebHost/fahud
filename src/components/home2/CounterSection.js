@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 const stats = [
   { count: '2022', label: 'Years Established' },
   { count: '26', label: 'Projects Completed' },
@@ -9,7 +10,7 @@ export default function CounterSection() {
   return (
     <div
       className="section-full counter-outer-one-wrap p-t120 p-b90"
-      style={{ backgroundImage: 'url(${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/background/count-bg.jpg)' }}
+      style={{ backgroundImage: `url(${assetPrefix}/images/background/count-bg.jpg)` }}
     >
       <div className="container">
         <div className="row">

@@ -1,3 +1,5 @@
+import { assetPrefix } from "@/lib/assetPrefix";
+
 export default function VideoSection() {
   return (
     <div className="section-full video-section-outer-wrap">
@@ -19,7 +21,7 @@ export default function VideoSection() {
         </div>
         <div
           className="get-intouch-style-2 overlay-wraper p-t120 p-b120 parallax-image"
-          style={{ backgroundImage: 'url(${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/background/getintouch.jpg)' }}
+          style={{ backgroundImage: `url(${assetPrefix}/images/background/getintouch.jpg)` }}
         ></div>
       </div>
     </div>

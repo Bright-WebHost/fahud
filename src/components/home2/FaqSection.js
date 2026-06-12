@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 const faqs = [
   {
     id: 'One',
@@ -35,7 +36,7 @@ export default function FaqSection() {
 
               <div className="col-lg-6 col-md-12">
                 <div className="faq-left-media">
-                  <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/faq-pic.png`} alt="Image" />
+                  <img src={`${assetPrefix}/images/faq-pic.png`} alt="Image" />
                 </div>
               </div>
 

@@ -1,8 +1,6 @@
 import Script from "next/script";
 import "./globals.css";
-
-const isGitHubPages = process.env.GITHUB_PAGES === "true";
-const assetPrefix = isGitHubPages ? "/Fahud" : "";
+import { assetPrefix } from "@/lib/assetPrefix";
 
 export const metadata = {
   title: "Fahud - Safety & Technocal trading",

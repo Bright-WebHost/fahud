@@ -1,8 +1,9 @@
 'use client';
+import { assetPrefix } from "@/lib/assetPrefix";
 
 import { FaMapMarkerAlt, FaFacebookSquare, FaInstagramSquare, FaExternalLinkAlt } from 'react-icons/fa';
 
-const BASE = process.env.NODE_ENV === 'production' ? '/Fahud' : '';
+const BASE = assetPrefix;
 
 export default function NFHAboutSection() {
   return (
