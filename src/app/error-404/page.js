@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
+import { assetPrefix } from '@/lib/assetPrefix';
 
 export default function Error404() {
   return (
@@ -22,7 +23,7 @@ export default function Error404() {
 					<div className="section-content page-notfound-inner">
                         <div className="page-notfound">
                             <div className="page-notfound-media">
-                                <img src="images/error-bg.png" alt="" />
+                                <img src={`${assetPrefix}/images/error-bg.png`} alt="" />
                             </div>
                             <div className="page-notfound-content">
                                 <h1 className="error-title">404</h1>

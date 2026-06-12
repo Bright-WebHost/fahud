@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
+import { assetPrefix } from '@/lib/assetPrefix';
 
 export default function BlogGrid() {
   return (
@@ -29,7 +30,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg1.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg1.jpg`} alt="" /></a>
                                     </div>
                                                                          
                                     <div className="wt-post-info">
@@ -51,7 +52,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg2.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg2.jpg`} alt="" /></a>
                                     </div> 
                                                                         
                                     <div className="wt-post-info">
@@ -73,7 +74,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg3.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg3.jpg`} alt="" /></a>
                                     </div>
                                                                          
                                     <div className="wt-post-info">
@@ -95,7 +96,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="@/assets/images/192.webp" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/services/192.webp`} alt="" /></a>
                                     </div>
                                                                          
                                     <div className="wt-post-info">
@@ -117,7 +118,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg5.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg5.jpg`} alt="" /></a>
                                     </div> 
                                                                         
                                     <div className="wt-post-info">
@@ -139,7 +140,7 @@ export default function BlogGrid() {
                             <div className="col-lg-4 col-md-6 m-b30">
                                 <div className="blog-post blog-post-5-outer">
                                     <div className="wt-post-media">
-                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg6.jpg" alt="" /></a>
+                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg6.jpg`} alt="" /></a>
                                     </div>
                                                                          
                                     <div className="wt-post-info">
