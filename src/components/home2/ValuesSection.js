@@ -7,13 +7,15 @@ const values = [
   { num: '06', title: 'Quality Craftsmanship', bg: 'pic6.jpg', desc: "It wasn't too long ago that you had to strap a mattress to the roof of your car. We're all glad those days are over, and you no longer need to worry about buyers remorse. If for any reason you don't love your HIBR we'll pick it up and refund your money." },
 ];
 
+import { assetPrefix } from '@/lib/assetPrefix';
+
 export default function ValuesSection() {
   return (
     <div className="twm-acd-st-1">
-      <div className="acd-bx" data-background="/images/acd-bg/pic1.jpg">
+      <div className="acd-bx" data-background={`${assetPrefix}/images/acd-bg/pic1.jpg`}>
         <div className="twm-acd-overlay"></div>
         {values.map((v, i) => (
-          <article key={i} className="section" data-background={`/images/acd-bg/${v.bg}`}>
+          <article key={i} className="section" data-background={`${assetPrefix}/images/acd-bg/${v.bg}`}>
             <span className="close">
               <span className="cross">
                 <span className="a"></span>

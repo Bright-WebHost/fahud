@@ -3,6 +3,7 @@ import Image from 'next/image';
 import Header from '@/components/Header';
 import Footer from '@/components/Footer';
 import InnerBanner from '@/components/InnerBanner';
+import { assetPrefix } from '@/lib/assetPrefix';
 
 export default function About2() {
     return (
@@ -30,7 +31,7 @@ export default function About2() {
                             </div>
                         </div>
                         <div className="twm-abt2-s-info-media  parallax-section">
-                            <div className="parallax-image" style={{ "backgroundImage": "url(images/background/ab2.jpg)" }}></div>
+                            <div className="parallax-image" style={{ backgroundImage: `url(${assetPrefix}/images/background/ab2.jpg)` }}></div>
                         </div>
                         <div className="twm-abt2-certi">
                             <ul className="twm-abt2-certi-list-bx">
@@ -79,10 +80,10 @@ export default function About2() {
 
                                         <div className="col-lg-7 col-md-12 m-b30 about-max-two-position">
                                             <div className="about-max-two">
-                                                <div className="about-max-two-media"><img src="images/about/l-pic.jpg" alt="" /></div>
+                                                <div className="about-max-two-media"><img src={`${assetPrefix}/images/about/l-pic.jpg`} alt="" /></div>
                                                 <div className="about-max-two-media2-wrap">
                                                     <div className="about-max-two-media2">
-                                                        <img src="images/about/s-pic.jpg" alt="" />
+                                                        <img src={`${assetPrefix}/images/about/s-pic.jpg`} alt="" />
                                                     </div>
                                                 </div>
 
@@ -295,10 +296,10 @@ export default function About2() {
 
                     {/*  OUR VALUE SECTION START  */}
                     <div className="twm-acd-st-1">
-                        <div className="acd-bx" data-background="images/acd-bg/pic1.jpg" style={{ "backgroundImage": "url(&quot" }}>
+                        <div className="acd-bx" data-background={`${assetPrefix}/images/acd-bg/pic1.jpg`} style={{ backgroundImage: `url(${assetPrefix}/images/acd-bg/pic1.jpg)` }}>
                             <div className="twm-acd-overlay"></div>
 
-                            <article className="section" data-background="images/acd-bg/pic1.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic1.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -311,7 +312,7 @@ export default function About2() {
                                 </div>
                             </article>
 
-                            <article className="section" data-background="images/acd-bg/pic2.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic2.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -324,7 +325,7 @@ export default function About2() {
                                 </div>
                             </article>
 
-                            <article className="section" data-background="images/acd-bg/pic3.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic3.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -337,7 +338,7 @@ export default function About2() {
                                 </div>
                             </article>
 
-                            <article className="section" data-background="images/acd-bg/pic4.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic4.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -350,7 +351,7 @@ export default function About2() {
                                 </div>
                             </article>
 
-                            <article className="section" data-background="images/acd-bg/pic5.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic5.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -363,7 +364,7 @@ export default function About2() {
                                 </div>
                             </article>
 
-                            <article className="section" data-background="images/acd-bg/pic6.jpg">
+                            <article className="section" data-background={`${assetPrefix}/images/acd-bg/pic6.jpg`}>
                                 <span className="close">
                                     <span className="cross">
                                         <span className="a"></span>
@@ -411,7 +412,7 @@ export default function About2() {
                                                 <div className="wt-icon-box-wraper">
                                                     <div className="icon-lg">
                                                         <span className="icon-cell site-text-primary">
-                                                            <img src="images/icons/furniture-2.png" alt="Image" /></span>
+                                                            <img src={`${assetPrefix}/images/icons/furniture-2.png`} alt="Image" /></span>
                                                     </div>
                                                 </div>
 
@@ -435,7 +436,7 @@ export default function About2() {
 
                                                 <div className="wt-icon-box-wraper">
                                                     <div className="icon-lg">
-                                                        <span className="icon-cell site-text-primary"><img src="images/icons/window.png" alt="Image" /></span>
+                                                        <span className="icon-cell site-text-primary"><img src={`${assetPrefix}/images/icons/window.png`} alt="Image" /></span>
                                                     </div>
                                                 </div>
 
@@ -459,7 +460,7 @@ export default function About2() {
 
                                                 <div className="wt-icon-box-wraper">
                                                     <div className="icon-lg">
-                                                        <span className="icon-cell site-text-primary"><img src="images/icons/candles.png" alt="Image" /></span>
+                                                        <span className="icon-cell site-text-primary"><img src={`${assetPrefix}/images/icons/candles.png`} alt="Image" /></span>
                                                     </div>
                                                 </div>
 
@@ -483,7 +484,7 @@ export default function About2() {
 
                                                 <div className="wt-icon-box-wraper">
                                                     <div className="icon-lg">
-                                                        <span className="icon-cell site-text-primary"><img src="images/icons/curtain.png" alt="Image" /></span>
+                                                        <span className="icon-cell site-text-primary"><img src={`${assetPrefix}/images/icons/curtain.png`} alt="Image" /></span>
                                                     </div>
                                                 </div>
 
@@ -507,7 +508,7 @@ export default function About2() {
 
                                                 <div className="wt-icon-box-wraper">
                                                     <div className="icon-lg">
-                                                        <span className="icon-cell site-text-primary"><img src="images/icons/key.png" alt="Image" /></span>
+                                                        <span className="icon-cell site-text-primary"><img src={`${assetPrefix}/images/icons/key.png`} alt="Image" /></span>
                                                     </div>
                                                 </div>
 
@@ -552,7 +553,7 @@ export default function About2() {
                                             <div className="col-lg-4 col-md-6 m-b30">
                                                 <div className="blog-post blog-post-5-outer">
                                                     <div className="wt-post-media">
-                                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg1.jpg" alt="" /></a>
+                                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg1.jpg`} alt="" /></a>
                                                     </div>
 
                                                     <div className="wt-post-info">
@@ -574,7 +575,7 @@ export default function About2() {
                                             <div className="col-lg-4 col-md-6 m-b30">
                                                 <div className="blog-post blog-post-5-outer">
                                                     <div className="wt-post-media">
-                                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg2.jpg" alt="" /></a>
+                                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg2.jpg`} alt="" /></a>
                                                     </div>
 
                                                     <div className="wt-post-info">
@@ -596,7 +597,7 @@ export default function About2() {
                                             <div className="col-lg-4 col-md-6 m-b30">
                                                 <div className="blog-post blog-post-5-outer">
                                                     <div className="wt-post-media">
-                                                        <a href="blog-single.html"><img src="images/blog/latest-2/bg3.jpg" alt="" /></a>
+                                                        <a href="blog-single.html"><img src={`${assetPrefix}/images/blog/latest-2/bg3.jpg`} alt="" /></a>
                                                     </div>
 
                                                     <div className="wt-post-info">
@@ -631,7 +632,7 @@ export default function About2() {
 
                                         <div className="col-lg-6 col-md-12">
                                             <div className="faq-left-media">
-                                                <img src="images/faq-pic.png" alt="Image" />
+                                                <img src={`${assetPrefix}/images/faq-pic.png`} alt="Image" />
                                             </div>
                                         </div>
                                         <div className="col-lg-6 col-md-12">
