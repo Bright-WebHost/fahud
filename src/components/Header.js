@@ -1,5 +1,6 @@
 "use client";
 import { useState, useEffect } from 'react';
+import { assetPrefix } from "@/lib/assetPrefix";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -35,7 +36,7 @@ export default function Header() {
               <div className="logo-header">
                 <div className="logo-header-inner logo-header-one">
                   <Link href="/" onClick={closeMenu}>
-                    <Image src="./images/fd.png" alt="FAHUD Safety & Technical Trading" width={180} height={90} priority />
+                    <Image src={`${assetPrefix}/images/fd.png`} alt="FAHUD Safety & Technical Trading" width={180} height={90} priority />
                   </Link>
                 </div>
               </div>

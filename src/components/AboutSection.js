@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -34,7 +35,7 @@ export default function AboutSection() {
               <div className="col-lg-7 col-md-12 m-b30 company-exp-position">
                 <div className="company-exp">
                   <div className="company-exp-media">
-                    <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/about2/l-pic.jpg`} alt="" />
+                    <img src={`${assetPrefix}/images/about2/l-pic.jpg`} alt="" />
                   </div>
                   <div className="company-exp-tagline">
                     <span>Leading Developer Of Commercial And Residential Projects</span>
@@ -43,7 +44,7 @@ export default function AboutSection() {
                   <div className="circle-text1">
                     <div className="emblem-wrap">
                       <div className="emblem">Architecture-And-Interior-Design-</div>
-                      <i><img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/in-circle-bx.png`} alt="In Circle Pic" /></i>
+                      <i><img src={`${assetPrefix}/images/in-circle-bx.png`} alt="In Circle Pic" /></i>
                     </div>
                   </div>
                 </div>

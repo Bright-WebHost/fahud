@@ -1,5 +1,6 @@
 'use client';
 
+import { assetPrefix } from "@/lib/assetPrefix";
 import { Activity, Heart, Zap } from 'lucide-react';
 import React, { useEffect, useRef } from "react";
 import gsap from "gsap";
@@ -72,7 +73,7 @@ export default function AboutSectionNew() {
               <div id="deviceGlow" />
               <img
               ref={imageRef}
-                src="./images/171.webp"
+                src={`${assetPrefix}/images/171.webp`}
                 alt="PulzCAD wearable ECG device"
                 id="deviceImage"
               />

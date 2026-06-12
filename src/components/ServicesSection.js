@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 import Link from 'next/link';
 import Image from 'next/image';
 
@@ -31,7 +32,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/furniture-2.png`} alt="Image" />
+                        <img src={`${assetPrefix}/images/icons/furniture-2.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -53,7 +54,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/window.png`} alt="Image" />
+                        <img src={`${assetPrefix}/images/icons/window.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -75,7 +76,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/candles.png`} alt="Image" />
+                        <img src={`${assetPrefix}/images/icons/candles.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -97,7 +98,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/curtain.png`} alt="Image" />
+                        <img src={`${assetPrefix}/images/icons/curtain.png`} alt="Image" />
                       </span>
                     </div>
                   </div>
@@ -119,7 +120,7 @@ export default function ServicesSection() {
                   <div className="wt-icon-box-wraper">
                     <div className="icon-lg">
                       <span className="icon-cell site-text-primary">
-                        <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/icons/key.png`} alt="Image" />
+                        <img src={`${assetPrefix}/images/icons/key.png`} alt="Image" />
                       </span>
                     </div>
                   </div>

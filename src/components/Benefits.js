@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 import Image from 'next/image';
 import Link from 'next/link';
 
@@ -25,7 +26,7 @@ export default function Benefits() {
                     <div className="service-icon-box-two">
                       <div className="service-media" style={{ maxWidth: '300px', margin: '0 auto' }}>
                         <img 
-                          src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/10.png`} 
+                          src={`${assetPrefix}/images/services/10.png`} 
                           alt="JSRS Certified Supplier Logo" 
                           style={{ width: '100%', height: 'auto', display: 'block' }}
                         />
@@ -38,7 +39,7 @@ export default function Benefits() {
                     <div className="service-icon-box-two">
                       <div className="service-media" style={{ maxWidth: '300px', margin: '0 auto' }}>
                         <img 
-                          src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/12.png`} 
+                          src={`${assetPrefix}/images/services/12.png`} 
                           alt="Riyada SMEs Development Authority Logo"
                           style={{ width: '100%', height: 'auto', display: 'block' }}
                         />
@@ -54,7 +55,7 @@ export default function Benefits() {
                   <div className="service-icon-box-two">
                     <div className="service-media" style={{ maxWidth: '350px', margin: '0 auto' }}>
                       <img 
-                        src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/services/11.png`} 
+                        src={`${assetPrefix}/images/services/11.png`} 
                         alt="ISO 9001:2015 Quality Management System Certificate"
                         style={{ width: '100%', height: 'auto', display: 'block' }}
                       />

@@ -1,3 +1,4 @@
+import { assetPrefix } from "@/lib/assetPrefix";
 import Link from 'next/link';
 
 export default function Footer() {
@@ -14,7 +15,7 @@ export default function Footer() {
                 <div className="widget widget_about">
                   <div className="logo-footer clearfix">
                     <Link href="/">
-                      <img src={`${process.env.NODE_ENV === "production" ? "/Fahud" : ""}/images/fd.png`} alt="FAHUD Safety" style={{ height: '60px', width: 'auto' }} />
+                      <img src={`${assetPrefix}/images/fd.png`} alt="FAHUD Safety" style={{ height: '60px', width: 'auto' }} />
                     </Link>
                   </div>
                   <div className="call-us">

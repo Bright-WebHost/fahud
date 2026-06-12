@@ -1,9 +1,11 @@
 'use client';
+import { assetPrefix } from "@/lib/assetPrefix";
+
 
 import { useEffect, useRef } from 'react';
 import Link from 'next/link';
 
-const BASE = process.env.NODE_ENV === 'production' ? '/Fahud' : '';
+const BASE = assetPrefix;
 
 /* ─────────────────────────────────────────────────────────────────────────
    PRODUCTS

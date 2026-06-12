@@ -1,3 +1,5 @@
+import { assetPrefix } from "@/lib/assetPrefix";
+
 export default function AboutInfoSection() {
   return (
 
@@ -13,10 +15,10 @@ export default function AboutInfoSection() {
         </div>
         {/* TITLE END */}
       </div>
-      <div className="acd-bx " data-background="./images/services/191.webp" style={{ "backgroundImage": "url(&quot)" }}>
+      <div className="acd-bx " data-background={`${assetPrefix}/images/services/191.webp`} style={{ backgroundImage: `url(${assetPrefix}/images/services/191.webp)` }}>
         <div className="twm-acd-overlay "></div>
 
-        <article className="section " data-background="./images/services/191.webp">
+        <article className="section " data-background={`${assetPrefix}/images/services/191.webp`}>
           <span className="close ">
             <span className="cross">
               <span className="a"></span>
@@ -29,7 +31,7 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background="./images/services/192.webp">
+        <article className="section" data-background={`${assetPrefix}/images/services/192.webp`}>
           <span className="close">
             <span className="cross">
               <span className="a"></span>
@@ -42,7 +44,7 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background="./images/services/193.webp">
+        <article className="section" data-background={`${assetPrefix}/images/services/193.webp`}>
           <span className="close">
             <span className="cross">
               <span className="a"></span>
@@ -55,7 +57,7 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background="./images/services/194.webp">
+        <article className="section" data-background={`${assetPrefix}/images/services/194.webp`}>
           <span className="close">
             <span className="cross">
               <span className="a"></span>
@@ -68,7 +70,7 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background="./images/services/195.webp">
+        <article className="section" data-background={`${assetPrefix}/images/services/195.webp`}>
           <span className="close">
             <span className="cross">
               <span className="a"></span>
@@ -81,7 +83,7 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background="./images/services/196.webp">
+        <article className="section" data-background={`${assetPrefix}/images/services/196.webp`}>
           <span className="close">
             <span className="cross">
               <span className="a"></span>
