@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const projects = [
   { num: 'Our Mission', title: 'To become a global leader in safety products and safety consulting by delivering high-quality, ethically sourced solutions. We aim to uphold strong business ethics and carefully select products that meet international safety standards while ensuring reliability and performance.', category: 'Appartment', img: './images/project-3/166.webp', desc: 'To become a global leader in safety products and safety consulting by delivering high-quality, ethically sourced solutions. We aim to uphold strong business ethics and carefully select products that meet international safety standards while ensuring reliability and performance.' },
   { num: 'Our Vision', title: 'To enhance workplace safety by educating workers, improving safety awareness, and promoting safe work practices. We strive to provide innovative, reliable, and high-quality safety products from trusted manufacturers without compromising on quality or standards.', category: 'Building', img: './images/project-3/167.webp', desc: 'A Mountain Hotel is a type of hospitality establishment designed to accommodate guests in mountainous or elevated regions, often catering to tourists seeking outdoor activities like skiing, hiking, or simply enjoying the natural landscape.' },
@@ -31,7 +33,7 @@ export default function ProjectsSection1() {
                   </div>
                   <div className="twm-product-v-scroll-count">{p.num}</div>
                   <h3 className="twm-product-v-scroll-title">
-                    <a href="#">{p.title}</a>
+                    <Link href="/project-single">{p.title}</Link>
                   </h3>
                   {/* <div className="twm-product-v-scroll-category">{p.category}</div> */}
                   <div className="twm-product-v-scroll-content">

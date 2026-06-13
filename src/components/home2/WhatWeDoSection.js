@@ -4,7 +4,7 @@ const whatWeDo = [
   { letter: 'W', img: 'https://i.pinimg.com/736x/41/a1/bd/41a1bdf7351d8ba578627f3e3115de52.jpg',              title: 'Welding Consumables',        desc: 'Premium welding consumables and accessories with comprehensive technical support and application training.' },
   { letter: 'S', img: 'https://i.pinimg.com/736x/87/05/a0/8705a02edf2076b398cafb3975efdd2b.jpg',      title: 'Safety PPE Equipment',       desc: 'Certified PPE and safety gear for maximum workplace protection and full regulatory compliance.' },
   { letter: 'L', img: 'https://i.pinimg.com/1200x/64/ad/b1/64adb111fbd1f7ceb5d561c76f87d871.jpg',          title: 'Lifting Solutions',           desc: 'Reliable lifting equipment and material handling tools engineered for safe and efficient operations.' },
-  { letter: 'S', img: 'https://i.pinimg.com/736x/b9/b4/21/b9b4214f55ec6c2e40476c9ad5bd00c9.jpg',       title: 'Safety Training & Solutions', desc: 'Expert safety training programmes and fire protection solutions to foster a strong workplace safety culture.' },
+  { letter: 'S', img: 'https://i.pinimg.com/736x/b9/b4/21/b9b4214f55ec6c2e40476c9ad5bd00c9.jpg',       title: 'Safety Product & Solutions', desc: 'Expert safety training programmes and fire protection solutions to foster a strong workplace safety culture.' },
 ];
 
 export default function WhatWeDoSection() {

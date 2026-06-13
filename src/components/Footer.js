@@ -40,20 +40,31 @@ export default function Footer() {
                 <div className="widget f-top-space">
                   <h3 className="widget-title">Contact Us</h3>
                   <ul className="widget_address">
-                    <li>
-                      <i className="bi bi-geo-alt"></i>
-                      <span>Head Office</span>
-                      Fahud, Ad Dhahirah Governorate,
-                      Sultanate of Oman
-                    </li>
-                    <li>
-                      <i className="bi bi-geo-alt"></i>
-                      <span>Muscat Office</span>
-                      Al Khuwair, Muscat, Oman
-                    </li>
+                      <li>
+                        <i className="bi bi-geo-alt"></i>
+                        <span>Head Office</span>
+                        Muscat, Ghala, Sultanate of Oman
+                      </li>
+                    {/* Muscat Office removed per request */}
                     <li><i className="bi bi-envelope"></i>info@fahudoman.com</li>
-                    <li><i className="bi bi-telephone"></i>+968 2447 8888</li>
+                    <li><i className="bi bi-telephone"></i>00968 + 94422435</li>
                   </ul>
+
+                  <div style={{ marginTop: '1rem' }}>
+                    <h3 className="widget-title">Our Subsidiary</h3>
+                    <ul className="widget_address">
+                      <li>
+                        <i className="bi bi-building"></i>
+                        <span>New Food House</span>
+                        ( Fine Dine Resturent)
+                      </li>
+                      <li>
+                        <i className="bi bi-building"></i>
+                        <span>Cilentro</span>
+                        ( Corporate catering)
+                      </li>
+                    </ul>
+                  </div>
                 </div>
               </div>
 
@@ -64,27 +75,27 @@ export default function Footer() {
                   <ul className="widget_address">
                     <li>
                       <i className="bi bi-shield-check"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Safety PPE Equipment</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Safety PPE Equipment</Link>
                     </li>
                     <li>
                       <i className="bi bi-tools"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Industrial Fasteners</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Industrial Fasteners</Link>
                     </li>
                     <li>
                       <i className="bi bi-wrench-adjustable"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Welding Consumables</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Welding Consumables</Link>
                     </li>
                     <li>
                       <i className="bi bi-box-seam"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Lifting Solutions</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Lifting Solutions</Link>
                     </li>
                     <li>
                       <i className="bi bi-gear"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Metal Fabrication</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Metal Fabrication</Link>
                     </li>
                     <li>
                       <i className="bi bi-mortarboard"></i>
-                      <Link href="#" style={{ color: 'inherit', textDecoration: 'none' }}>Safety Training</Link>
+                      <Link href="/service-detail" style={{ color: 'inherit', textDecoration: 'none' }}>Safety Training</Link>
                     </li>
                   </ul>
                 </div>
@@ -106,8 +117,8 @@ export default function Footer() {
               <div className="wt-footer-bot-right">
                 <ul className="copyrights-nav">
                   <li><Link href="/about-1">About Us</Link></li>
-                  <li><Link href="#">Services</Link></li>
-                  <li><Link href="#">Contact Us</Link></li>
+                  <li><Link href="/services">Services</Link></li>
+                  <li><Link href="/contact">Contact Us</Link></li>
                 </ul>
               </div>
             </div>

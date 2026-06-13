@@ -1,3 +1,6 @@
+"use client";
+import { useEffect } from 'react';
+
 const testimonials = [
   {
     text: '"Wide range of safety equipment available here. Safety shoes, protective equipment, fire extinguisher refilling, etc available under a single roof. Great after sales service too"',
@@ -26,6 +29,18 @@ const testimonials = [
 ];
 
 export default function TestimonialsSection() {
+  useEffect(() => {
+    // Initialize the global slider if present (ensures it runs on client-side navigation)
+    try {
+      if (typeof window !== 'undefined' && window.twm_t_monial_2_slider) {
+        window.twm_t_monial_2_slider();
+      }
+    } catch (e) {
+      // ignore initialization errors
+      // console.error('testimonial init failed', e);
+    }
+  }, []);
+
   return (
     <div className="section-full testimonial2-outer-wrap p-t50 p-b90 parallax-section">
       <div className="parallax-image" style={{ backgroundImage: 'url(/images/project-3/165.webp)', opacity: 0.3 }}></div>

@@ -48,7 +48,7 @@ export default function HeroSlider() {
                 <h2 className="wt-title" data-swiper-parallax="-500">
                   When you look at the modern style
                 </h2>
-                <Link href="#" className="site-button">Read More</Link>
+                <Link href="/service-detail" className="site-button">Read More</Link>
               </div>
             </div>
             <div className="xl-title">
@@ -63,7 +63,7 @@ export default function HeroSlider() {
                 <h2 className="wt-title" data-swiper-parallax="-500">
                   A life full of design secrets.
                 </h2>
-                <Link href="#" className="site-button">Read More</Link>
+                <Link href="/service-detail" className="site-button">Read More</Link>
               </div>
             </div>
             <div className="xl-title">
@@ -78,7 +78,7 @@ export default function HeroSlider() {
                 <h2 className="wt-title" data-swiper-parallax="-500">
                   A moments of best creation
                 </h2>
-                <Link href="#" className="site-button">Read More</Link>
+                <Link href="/service-detail" className="site-button">Read More</Link>
               </div>
             </div>
             <div className="xl-title">

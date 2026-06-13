@@ -106,7 +106,7 @@ export default function About1() {
                             manufacturing.
                           </p>
                         </div>
-                        <Link href="/contact-1" className="site-button">Get In Touch</Link>
+                        <Link href="/contact" className="site-button">Get In Touch</Link>
                       </div>
                     </div>
 

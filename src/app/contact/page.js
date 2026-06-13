@@ -48,13 +48,7 @@ export default function Contact() {
 Ghala Industrial Area | Muscat | Sultanate of Oman</p>
                                                     </div>
                                                 </div>
-                                                <div className="c-info-column">
-                                                    <div className="c-info-icon"><i className="bi bi-geo-alt"></i></div>
-                                                    <div className="c-info-detail">
-                                                        <span className="m-t0">Address info</span>
-                                                        <p>FAHUD SAFETY AND TECHNICAL TRADING SPC, FALAJ AL QABAIL, SOHAR</p>
-                                                    </div>
-                                                </div>
+                                                {/* Removed second address per request */}
 
                                                 <div className="c-info-column">
                                                     <div className="c-info-icon">
@@ -62,7 +56,7 @@ Ghala Industrial Area | Muscat | Sultanate of Oman</p>
                                                     </div>
                                                     <div className="c-info-detail">
                                                         <span className="m-t0">Phone number</span>
-                                                        <p><a href="tel:+96891796734">+968 9179 6734</a></p>
+                                                        <p><a href="tel:+96894422435">00968 + 94422435</a></p>
                                                     </div>
                                                 </div>
 

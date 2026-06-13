@@ -18,25 +18,6 @@ export default function NFHAboutSection() {
 
         {/* Subsidiaries Grid */}
         <div className="subsidiaries-grid">
-          
-          {/* Cilantro */}
-          <article className="brand-card cilantro-card">
-            <div className="card-visual">
-              <img src={`${BASE}/images/about2/cilantro.png`} alt="Cilantro restaurant logo" className="brand-image" />
-              <div className="card-accent"></div>
-            </div>
-            <div className="card-content">
-              <h3 className="brand-name">Cilantro</h3>
-              <p className="brand-category">Hospitality &amp; Dining</p>
-              <p className="brand-description">A hospitality-focused dining brand delivering authentic flavors and premium customer experiences.</p>
-              <div className="brand-meta">
-                <span className="location-item">
-                  <FaMapMarkerAlt className="meta-icon" />
-                  Muscat, Oman
-                </span>
-              </div>
-            </div>
-          </article>
 
           {/* New Food House */}
           <article className="brand-card nfh-card">
@@ -76,6 +57,25 @@ export default function NFHAboutSection() {
                     <FaInstagramSquare className="link-icon" />
                   </a>
                 </div>
+              </div>
+            </div>
+          </article>
+
+          {/* Cilantro */}
+          <article className="brand-card cilantro-card">
+            <div className="card-visual">
+              <img src={`${BASE}/images/about2/cilantro.png`} alt="Cilantro restaurant logo" className="brand-image" />
+              <div className="card-accent"></div>
+            </div>
+            <div className="card-content">
+              <h3 className="brand-name">Cilantro</h3>
+              <p className="brand-category">Hospitality &amp; Dining</p>
+              <p className="brand-description">A hospitality-focused dining brand delivering authentic flavors and premium customer experiences.</p>
+              <div className="brand-meta">
+                <span className="location-item">
+                  <FaMapMarkerAlt className="meta-icon" />
+                  Muscat, Oman
+                </span>
               </div>
             </div>
           </article>

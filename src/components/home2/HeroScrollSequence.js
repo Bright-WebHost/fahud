@@ -563,7 +563,7 @@ export default function HeroScrollSequence() {
             </p>
 
             <div className="hs-cta-wrap">
-              <Link href="/services" className="hs-btn-primary" id="hs-explore-btn">
+              <Link href="/products" className="hs-btn-primary" id="hs-explore-btn">
                 Explore Products
                 <svg width="16" height="16" viewBox="0 0 16 16" fill="none">
                   <path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" strokeWidth="1.8"

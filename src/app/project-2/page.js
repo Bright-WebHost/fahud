@@ -414,7 +414,7 @@ export default function Project2() {
                                         </div>
                                         {project.title && (
                                             <div className="project-new-content">
-                                                <h3 className="wt-title"><Link href="#">{project.title}</Link></h3>
+                                                <h3 className="wt-title"><Link href="/project-single">{project.title}</Link></h3>
                                                 {/* <p>{project.desc}</p> */}
                                             </div>
                                         )}

@@ -1,6 +1,11 @@
+"use client";
+
+import { useState } from 'react';
 import { assetPrefix } from "@/lib/assetPrefix";
 
 export default function AboutInfoSection() {
+  const [activeSection, setActiveSection] = useState(null);
+
   return (
 
     <div className="section-full  twm-acd-st-1 ">
@@ -15,11 +20,15 @@ export default function AboutInfoSection() {
         </div>
         {/* TITLE END */}
       </div>
-      <div className="acd-bx " data-background={`${assetPrefix}/images/services/191.webp`} style={{ backgroundImage: `url(${assetPrefix}/images/services/191.webp)` }}>
+      <div
+        className={`acd-bx ${activeSection !== null ? 'enabled' : ''}`}
+        data-background={`${assetPrefix}/images/services/191.webp`}
+        style={{ backgroundImage: `url(${assetPrefix}/images/services/191.webp)` }}
+      >
         <div className="twm-acd-overlay "></div>
 
-        <article className="section " data-background={`${assetPrefix}/images/services/191.webp`}>
-          <span className="close ">
+        <article className={`section ${activeSection === 0 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/191.webp`} onClick={() => setActiveSection(0)}>
+          <span className="close " onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
@@ -31,8 +40,8 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background={`${assetPrefix}/images/services/192.webp`}>
-          <span className="close">
+        <article className={`section ${activeSection === 1 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/192.webp`} onClick={() => setActiveSection(1)}>
+          <span className="close" onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
@@ -44,8 +53,8 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background={`${assetPrefix}/images/services/193.webp`}>
-          <span className="close">
+        <article className={`section ${activeSection === 2 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/193.webp`} onClick={() => setActiveSection(2)}>
+          <span className="close" onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
@@ -57,8 +66,8 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background={`${assetPrefix}/images/services/194.webp`}>
-          <span className="close">
+        <article className={`section ${activeSection === 3 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/194.webp`} onClick={() => setActiveSection(3)}>
+          <span className="close" onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
@@ -70,8 +79,8 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background={`${assetPrefix}/images/services/195.webp`}>
-          <span className="close">
+        <article className={`section ${activeSection === 4 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/195.webp`} onClick={() => setActiveSection(4)}>
+          <span className="close" onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
@@ -83,14 +92,14 @@ export default function AboutInfoSection() {
           </div>
         </article>
 
-        <article className="section" data-background={`${assetPrefix}/images/services/196.webp`}>
-          <span className="close">
+        <article className={`section ${activeSection === 5 ? 'open' : ''}`} data-background={`${assetPrefix}/images/services/196.webp`} onClick={() => setActiveSection(5)}>
+          <span className="close" onClick={(event) => { event.stopPropagation(); setActiveSection(null); }}>
             <span className="cross">
               <span className="a"></span>
               <span className="b"></span>
             </span>
           </span>
-          <h2 className="heading"><span className="above">06</span>Safety Training & Solutions<span className="below">+</span></h2>
+          <h2 className="heading"><span className="above">06</span>Safety Product & Solutions<span className="below">+</span></h2>
           <div className="inside-content">
             FAHUD Safety & Technical Trading Oman offers a wide range of safety products along with expert training programs, including fire safety and emergency preparedness. Our solutions help businesses improve workplace safety awareness and compliance.
           </div>

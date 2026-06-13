@@ -3,6 +3,7 @@
 import { assetPrefix } from "@/lib/assetPrefix";
 import { Activity, Heart, Zap } from 'lucide-react';
 import React, { useEffect, useRef } from "react";
+import Link from 'next/link';
 import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
@@ -64,7 +65,9 @@ export default function AboutSectionNew() {
 
             <div id="buttons">
               {/* <button id="btn_btnPrimary">Learn More</button> */}
-              <button id="btn_btnSecondary">Learn More</button>
+              <Link href="/about-1" id="btn_btnSecondary">
+                Learn More
+              </Link>
             </div>
           </div>
 
@@ -268,11 +271,15 @@ export default function AboutSectionNew() {
         }
 
         #btn_btnSecondary {
+          display: inline-flex;
+          align-items: center;
+          justify-content: center;
           padding: 0.75rem 1.5rem;
           border-radius: 9999px;
           font-weight: 600;
           font-size: 0.875rem;
           border: none;
+          text-decoration: none;
           cursor: pointer;
           transition: all 0.2s ease;
           background: rgba(19, 56, 119, 0.2);

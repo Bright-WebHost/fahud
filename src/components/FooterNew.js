@@ -80,17 +80,11 @@ const FooterNew = () => {
     <FaMapMarkerAlt className="footer-icon" />
     <div>
       <p><b>Head Office</b></p>
-      <p>Fahud, Ad Dhahirah Governorate, Sultanate of Oman</p>
+      <p>Muscat, Ghala, Sultanate of Oman</p>
     </div>
   </li>
 
-  <li className="footer-contact-item">
-    <FaMapMarkerAlt className="footer-icon" />
-    <div>
-      <p><b>Muscat Office</b></p>
-      <p>Al Khuwair, Muscat, Oman</p>
-    </div>
-  </li>
+  {/* Muscat Office removed per request */}
 
   <li className="footer-contact-item">
     <FaEnvelope className="footer-icon" />
@@ -99,7 +93,7 @@ const FooterNew = () => {
 
   <li className="footer-contact-item">
     <FaPhoneAlt className="footer-icon" />
-    <p>+968 2447 8888</p>
+    <p>00968 + 94422435</p>
   </li>
 </ul>
           </div>
@@ -125,12 +119,20 @@ const FooterNew = () => {
             <div>
               <h3 className="footer-section-header">Our Subsidiary</h3>
               <ul className="footer-link-list">
-                {['New Food House', 'Cilentro'].map((subsidiary, idx) => (
-                  <li key={idx} className="footer-link-item">
-                    <span className="footer-link-bullet"></span>
-                    <span className="footer-link-text">{subsidiary}</span>
-                  </li>
-                ))}
+                <li className="footer-link-item">
+                  <span className="footer-link-bullet"></span>
+                  <div className="footer-link-text">
+                    <strong>New Food House</strong>
+                    <div className="subsidiary-desc">( Fine Dine Resturent)</div>
+                  </div>
+                </li>
+                <li className="footer-link-item">
+                  <span className="footer-link-bullet"></span>
+                  <div className="footer-link-text">
+                    <strong>Cilentro</strong>
+                    <div className="subsidiary-desc">( Corporate catering)</div>
+                  </div>
+                </li>
               </ul>
             </div>
           </div>
